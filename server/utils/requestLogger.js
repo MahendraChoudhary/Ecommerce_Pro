@@ -1,4 +1,4 @@
-const requestLogger = (req,res,next)=>{
+const requestLogger = (req, res, next)=>{
     const data = `${req.method}:${req.path}`
     console.log(data);
     next();

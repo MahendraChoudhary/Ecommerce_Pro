@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-// const { nanoid } = require("nanoid");
+const nanoid = require("nanoid");
 const { errorCreator } = require('../utils/responseCreator');
 
 const userSchema = new Schema({

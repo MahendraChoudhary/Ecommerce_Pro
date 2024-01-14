@@ -1,6 +1,9 @@
 const express = require('express');
 const dotenv = require("dotenv");
+const bodyParser = require("body-parser")
+
 dotenv.config();
+
 const app = express();
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
@@ -16,6 +19,8 @@ const errHandler = require('./utils/errorHandler');
 const PORT = process.env.PORT || 4000;
 // http://localhost:4000/router
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(cors({
     origin: 'http://localhost:3000',
     credentials: true
@@ -28,7 +33,7 @@ app.use(cookieParser());
 // custom middleware used for logging
 app.use(requestLogger)
 
-http://localhost:4000/router
+// http://localhost:4000/router
 app.use('/router', router);
 app.use('/user', userRouter);
 app.use('/cart', cartRouter);

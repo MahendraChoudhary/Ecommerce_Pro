@@ -14,3 +14,4 @@ const verifyPassword = async (password, hash)=>{
 }
 
 module.exports = { generatePasswordHash, verifyPassword };
+
