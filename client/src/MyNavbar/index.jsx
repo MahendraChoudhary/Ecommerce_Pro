@@ -23,11 +23,12 @@ function MyNavbar() {
     return (
         <Navbar expand="md" variant='dark' bg='dark'>
             <Container fluid>
-                <Navbar.Brand href="#home">EcommercePro</Navbar.Brand>
+                {/* <Navbar.Brand href="#home">EcommercePro</Navbar.Brand> */}
+                <Navbar.Brand as={Link} to='/' >EcommercePro</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to='/' >Home</Nav.Link>
+                        {/* <Nav.Link as={Link} to='/' >Home</Nav.Link> */}
                         {/* <Nav.Link as={Link} to='/bootstrap'>Bootstrap</Nav.Link>
                         <Nav.Link as={Link} to='/flex'>Flexbox</Nav.Link> */}
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
